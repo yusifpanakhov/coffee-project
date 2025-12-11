@@ -43,10 +43,11 @@ export default function CoffeeSection() {
     <div className="w-full">
       <div className="bg-beige-100 flex justify-between items-center px-8 py-16">
         <div>
+            <div className="flex justify-center items-center flex-col ml-[500px]">
           <h1 className="text-3xl font-semibold mb-4">Check Out Our Best Coffee Beans</h1>
           <button className="bg-black text-white px-6 py-2 rounded-full">Explore Our Products</button>
-        </div>
-        <img src="/path/to/coffee-beans.png" alt="Coffee Beans" className="w-64 h-auto" />
+        </div></div>
+        <img src="/img/coffee-beans.png" alt="Coffee Beans" className="w-[400px] h-auto" />
       </div>
 
       <div className="text-center py-16 px-4">
@@ -58,9 +59,9 @@ export default function CoffeeSection() {
             <div key={index} className="bg-gray-100 p-6 rounded-xl max-w-sm shadow-md">
               <div className="flex items-center mb-4">
                 <img
-                  src="/path/to/avatar.jpg"
+                  src="/img/avatar.jpg"
                   alt={t.name}
-                  className="w-12 h-12 rounded-full mr-3"
+                  className="w-12 h-12   rounded-full mr-3"
                 />
                 <div>
                   <h3 className="font-semibold">{t.name}</h3>

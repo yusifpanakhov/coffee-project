@@ -28,6 +28,7 @@
   }
   
   return (
+    <div className="mr-[120px]">
     <div style={{ background: "#f4f1ed", minHeight: "100vh", paddingBottom: "50px",marginLeft: 150 }}>
       
       <h2 style={{ textAlign: "center", marginTop: 40, letterSpacing: "1px" }}>OUR SPECIAL COFFEE</h2>
@@ -130,7 +131,7 @@
 
       </div>
 
-    </div>
+    </div></div>
   )
 }
 
