@@ -1,16 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 import './index.css';
-
-import App from './App.jsx'
-
-import './index.css'
-import App from './pages/Shop'
-
+import Shop from './pages/Shop'; 
+import Footer from './pages/Footer'; 
+import Banner from './pages/Banner'; 
+import Header from './pages/Header'; 
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+  <React.StrictMode>
+    <Header/>
+    <Shop />
+    <Banner/>
+    <Footer/>
+  </React.StrictMode>
+);

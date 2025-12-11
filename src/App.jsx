@@ -1,12 +1,16 @@
 import React from 'react'
-import Footer from "./pages/Footer";
-import Header from "./pages/Header";
+import Shop from './pages/Shop'; 
+import Footer from './pages/Footer'; 
+import Banner from './pages/Banner'; 
+import Header from './pages/Header'; 
 
 const App = () => {
   return (
     <div>
-    <Header/>
-    <Footer />
+  <Header/>
+    <Shop />
+    <Banner/>
+    <Footer/>
 </div>
   )
 }

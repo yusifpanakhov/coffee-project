@@ -1,24 +1,24 @@
-const Shop = () => {
-  const coffee = [
+  const Shop = () => {
+    const coffee = [
     { id: 1, img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=60", title: "Lungo coffee", price: 200 },
     { id: 2, img: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=60", title: "Lungo coffee", price: 200 },
     { id: 3, img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=60", title: "Lungo coffee", price: 200 },
     { id: 4, img: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=60", title: "Lungo coffee", price: 200 },
   ]
-
+  
   const dessert = [
     { id: 5, img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=60", title: "Dessert", price: 200 },
     { id: 6, img: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=60", title: "Dessert", price: 200 },
     { id: 7, img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=60", title: "Dessert", price: 200 },
     { id: 8, img: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=60", title: "Dessert", price: 200 },
   ]
-
+  
   const slide = (id, d) => {
     const el = document.getElementById(id)
     if (!el) return
     el.scrollLeft += d === "l" ? -270 : 270
   }
-
+  
   const card = {
     width: "250px",
     background: "#fff",
@@ -26,7 +26,7 @@ const Shop = () => {
     padding: "12px",
     boxShadow: "0 3px 12px rgba(0,0,0,.12)"
   }
-
+  
   return (
     <div style={{ background: "#f4f1ed", minHeight: "100vh", paddingBottom: "50px",marginLeft: 150 }}>
       
@@ -42,7 +42,7 @@ const Shop = () => {
             left: "5%", top: "50%", transform: "translateY(-50%)",
             cursor: "pointer"
           }}
-        >←</button>
+          >←</button>
 
         <div
           id="coffeeWrap"
@@ -54,7 +54,7 @@ const Shop = () => {
             width: "80%",
             scrollBehavior: "smooth"
           }}
-        >
+          >
           {coffee.map(i => (
             <div key={i.id} style={card}>
               <img src={i.img} style={{ width: "100%", borderRadius: 10, height: 170, objectFit: "cover" }} />
@@ -76,7 +76,7 @@ const Shop = () => {
             position: "absolute", right: "5%", top: "50%",
             transform: "translateY(-50%)", cursor: "pointer"
           }}
-        >→</button>
+          >→</button>
 
       </div>
 
@@ -92,7 +92,7 @@ const Shop = () => {
             left: "5%", top: "50%", transform: "translateY(-50%)",
             cursor: "pointer"
           }}
-        >←</button>
+          >←</button>
 
         <div
           id="dessertWrap"
@@ -104,7 +104,7 @@ const Shop = () => {
             width: "80%",
             scrollBehavior: "smooth"
           }}
-        >
+          >
           {dessert.map(d => (
             <div key={d.id} style={card}>
               <img src={d.img} style={{ width: "100%", borderRadius: 10, height: 170, objectFit: "cover" }} />
@@ -126,7 +126,7 @@ const Shop = () => {
             position: "absolute", right: "5%", top: "50%",
             transform: "translateY(-50%)", cursor: "pointer"
           }}
-        >→</button>
+          >→</button>
 
       </div>
 
@@ -134,5 +134,6 @@ const Shop = () => {
   )
 }
 
-export default Shop;
 
+
+export default Shop;
