@@ -66,11 +66,7 @@ export default function Header() {
             </div>
 
             <div className="w-full lg:w-1/2 relative flex items-center justify-center mt-10 lg:mt-0">
-              <img
-                src="/img/Coffecup.png"
-                className="w-64 sm:w-72 lg:w-80 drop-shadow-2xl"
-                alt="Coffee cup"
-              />
+         
             </div>
           </div>
         </section>
