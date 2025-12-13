@@ -3,7 +3,7 @@ import React from "react";
 export default function Header() {
   return (
     <div className="min-h-screen flex flex-col bg-[#111] text-white">
-      {/* Header */}
+
       <header className="w-full">
         <div className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
           <div className="text-xl font-semibold tracking-wide">coffea</div>
@@ -30,11 +30,10 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Main */}
       <main className="flex-1 flex flex-col">
-        {/* Hero Section */}
+     
         <section className="relative flex-1 w-full">
-          {/* Background image */}
+     
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
@@ -42,12 +41,12 @@ export default function Header() {
             }}
           ></div>
 
-          {/* Overlay */}
+          
           <div className="absolute inset-0 bg-black/40"></div>
 
-          {/* Content wrapper */}
+     
           <div className="relative max-w-6xl mx-auto px-6 pb-12 lg:pb-0 flex flex-col lg:flex-row">
-            {/* Text Content */}
+      
             <div className="w-full lg:w-1/2 flex flex-col justify-center py-12 lg:py-0">
               <p className="tracking-[0.3em] text-xs text-white/60 mb-4 uppercase">
                 Welcome
@@ -66,7 +65,6 @@ export default function Header() {
               </button>
             </div>
 
-            {/* Image */}
             <div className="w-full lg:w-1/2 relative flex items-center justify-center mt-10 lg:mt-0">
               <img
                 src="/img/Coffecup.png"
@@ -77,7 +75,6 @@ export default function Header() {
           </div>
         </section>
 
-        {/* Features Section */}
         <section className="w-full bg-[#e9ddc9]">
           <div className="max-w-5xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-xs">
             {[

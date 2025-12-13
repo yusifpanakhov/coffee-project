@@ -72,12 +72,12 @@
         <button
           onClick={() => slide("coffeeWrap", "r")}
           style={{
-            width: 42, height: 42, borderRadius: "50%",
-            border: "none", background: "#e9dfcf",
-            position: "absolute", right: "5%", top: "50%",
+          width: 42, height: 42, borderRadius: "50%",
+        border: "none", background: "#e9dfcf",
+      position: "absolute", right: "5%", top: "50%",
             transform: "translateY(-50%)", cursor: "pointer"
           }}
-          >→</button>
+        >→</button>
 
       </div>
 
@@ -87,10 +87,9 @@
 
         <button
           onClick={() => slide("dessertWrap", "l")}
-          style={{
+        style={{
             width: 42, height: 42, borderRadius: "50%",
-            border: "none", background: "#e9dfcf", position: "absolute",
-            left: "5%", top: "50%", transform: "translateY(-50%)",
+           border: "none", background: "#e9dfcf", position: "absolute",
             cursor: "pointer"
           }}
           >←</button>
@@ -98,11 +97,11 @@
         <div
           id="dessertWrap"
           style={{
-            display: "flex",
+        display: "flex",
             gap: 20,
             overflowX: "auto",
-            padding: 15,
-            width: "80%",
+           padding: 15,
+          width: "80%",
             scrollBehavior: "smooth"
           }}
           >
