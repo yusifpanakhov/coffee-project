@@ -1,5 +1,15 @@
 import React from "react";
 
+
+const navigationLinks = [
+  { name: "Home", href: "#" },
+  { name: "Coffee", href: "#" },
+  { name: "Bakery", href: "#" },
+  { name: "Shop", href: "#" },
+  { name: "About", href: "#" },
+  { name: "Login", href: "#" },
+];
+
 export default function Header() {
   return (
     <div className="min-h-screen flex flex-col bg-[#111] text-white">
@@ -9,13 +19,15 @@ export default function Header() {
           <div className="text-xl font-semibold tracking-wide">coffea</div>
 
           <nav className="hidden md:flex items-center gap-8 text-sm uppercase">
-            <a href="#" className="hover:text-[#c46b2d] transition">Home</a>
-            <a href="#" className="hover:text-[#c46b2d] transition">Coffee</a>
-            <a href="#" className="hover:text-[#c46b2d] transition">Bakery</a>
-            <a href="#" className="hover:text-[#c46b2d] transition">Shop</a>
-            <a href="#" className="hover:text-[#c46b2d] transition">About</a>
-            <a href="#" className="hover:text-[#c46b2d] transition">Login</a>
-
+            {navigationLinks.map((link, idx) => (
+              <a
+                key={idx}
+                href={link.href}
+                className="hover:text-[#c46b2d] transition"
+              >
+                {link.name}
+              </a>
+            ))}
             <button className="ml-4 w-9 h-9 flex items-center justify-center rounded-full border border-white/40 hover:border-[#c46b2d] hover:bg-white/5 transition">
               <img src="/img/Searchicon.png" className="w-4 h-4" alt="Search" />
             </button>
